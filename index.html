@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharatwaj B | Cybersecurity Portfolio</title>
+
+  <!-- FIRST DESIGN: Cyber / Terminal Theme with Detailed Sections -->
+
+  <style>
+    :root {
+      --bg: #05080f;
+      --panel: #0b1220;
+      --accent: #00ffcc;
+      --accent-2: #0aff9d;
+      --text: #e4f1ff;
+      --muted: #7da0c4;
+      --border: rgba(0,255,204,0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'JetBrains Mono', 'Consolas', monospace;
+      background: radial-gradient(circle at top, #081225, #05080f 70%);
+      color: var(--text);
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(5,8,15,0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      z-index: 50;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6rem 2rem 2rem;
+    }
+
+    header img {
+      width: 190px;
+      height: 240px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 16px;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 30px rgba(0,255,204,0.45);
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      text-shadow: 0 0 15px rgba(0,255,204,0.5);
+    }
+
+    header p {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 720px;
+    }
+
+    .terminal {
+      margin-top: 2rem;
+      background: #02050a;
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 720px;
+      box-shadow: 0 0 40px rgba(0,255,204,0.15);
+      text-align: left;
+    }
+
+    .terminal span { color: var(--accent-2); }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 25px rgba(0,255,204,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: .3rem;
+      padding: .35rem .8rem;
+      border-radius: 999px;
+      background: rgba(0,255,204,0.08);
+      color: var(--accent);
+      font-size: .8rem;
+      border: 1px solid var(--border);
+    }
+
+    ul { margin-left: 1.2rem; }
+    li { margin-bottom: .6rem; }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #02050a;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <img src="My Photo.jpeg" alt="Bharatwaj B" />
+  <h1>Bharatwaj B</h1>
+  <p>Cybersecurity Engineering Student • Linux Administrator • Security Research Enthusiast</p>
+
+  <div class="terminal">
+    <p><span>$</span> whoami</p>
+    <p>B.E Computer Science and Engineering (Cyber Security)</p>
+    <p><span>$</span> current_focus</p>
+    <p>Linux Administration, Application Security, Data Security & Management, Digital Forensics</p>
+    <p><span>$</span> objective</p>
+    <p>Build secure systems through practical learning, research, and industry exposure</p>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    I am a final-year Cyber Security engineering student with a strong interest in building
+    secure, reliable, and efficient systems. My academic journey and internships have helped
+    me gain hands-on exposure to Linux system administration, application security testing,
+    cryptographic concepts, and digital forensics. I actively focus on understanding how
+    security mechanisms work at both system and application levels.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card">
+    <span class="tag">Linux (RHEL)</span>
+    <span class="tag">System Administration</span>
+    <span class="tag">Application Security</span>
+    <span class="tag">Web Application Testing</span>
+    <span class="tag">Cryptography Basics</span>
+    <span class="tag">Network Security</span>
+    <span class="tag">Python</span>
+    <span class="tag">C Programming</span>
+    <span class="tag">Digital Forensics</span>
+    <span class="tag">Software Testing</span>
+    <span class="tag">IoT Security</span>
+    <p style="margin-top:1rem;color:var(--muted)">Hands-on experience gained through labs, certifications, internships, and academic projects.</p>
+  </div>
+</section>
+
+<section id="project">
+  <h2>Signature Project</h2>
+  <div class="card">
+    <h3>LumiLock – Advanced Optical Access Control</h3>
+    <p>
+      LumiLock is a security-focused academic and research project designed to provide
+      authentication without relying on traditional wireless communication.
+    </p>
+    <ul>
+      <li>Implements Time-based One-Time Password (TOTP) for secure access</li>
+      <li>Uses visible light (smartphone flashlight) for authentication</li>
+      <li>Operates completely offline using an air-gapped security model</li>
+      <li>Reduces risks of replay and network-based attacks</li>
+    </ul>
+    <p><strong>Paper presented at IEEE ICCCNT 2025, IIT Indore</strong></p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Internship Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <strong>Linux Administrator Intern</strong><br />
+      Vectra Technosoft (Jun – Jul 2024)
+      <ul>
+        <li>Worked with Red Hat Enterprise Linux systems</li>
+        <li>User, service, and network configuration</li>
+        <li>Basic system troubleshooting and administration</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>Cyber Security Intern</strong><br />
+      Virtual Tech Services (Jun – Jul 2025)
+      <ul>
+        <li>Web application testing fundamentals</li>
+        <li>Understanding vulnerabilities and security assessment</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>Cyber Forensics Intern (Offer)</strong><br />
+      BM’s Cyberlab (Oct 2025 – Apr 2026)
+      <ul>
+        <li>Exposure to cyber forensics tools and investigation workflows</li>
+        <li>Information security best practices</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>CompTIA Security+ (SY0-701)</li>
+      <li>Red Hat Certified System Administrator (RHCSA)</li>
+      <li>Cyber Security & Applied Ethical Hacking – Infosys</li>
+      <li>Cyber Security Tools & Techniques with DPDP Act – MSME</li>
+      <li>Cisco Network Security</li>
+      <li>NPTEL – Introduction to IoT</li>
+      <li>NPTEL – Software Testing</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    📧 Email: bharatwajoff@gmail.com<br />
+    📞 Phone: +91 6382882597<br />
+    🔗 LinkedIn: linkedin.com/in/bharatwaj-b-038324378
+  </div>
+</section>
+
+<footer>
+  © 2025 Bharatwaj B | Cybersecurity Portfolio
+</footer>
+
+</body>
+</html>
